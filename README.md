@@ -14,9 +14,21 @@ zenika_nc
 
 5- Lancer la commander git push origin master pour envoyer vos modification
 
-6-  mvn release:prepare 
+===============================================================================================
+Maven Release
+===============================================================================================
+1-  placer vous sous le dossier maven-release-sample
 
-7-  mvn release:perform -Dgoals="install"
+2-  mvn release:prepare 
+
+3-  mvn release:perform -Dgoals="install"
+
+===============================================================================================
+Gradle Release
+===============================================================================================
+1-  placer vous sous le dossier gradle-release-sample
+
+2-  gradle release
 
 
 
