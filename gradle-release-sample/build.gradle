@@ -1,0 +1,23 @@
+description = 'Gradle Release Simple'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply from: "https://launchpad.net/gradle-release/trunk/1.0/+download/apply.groovy"
+    
+    repositories {
+       mavenCentral()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.8.2'
+    }
+
+    version = '1.0'
+
+    jar {
+        manifest.attributes provider: 'my cool company'
+    }
+   release {
+    project.setProperty("gradle.release.useAutomaticVersion", "true");
+  }
+
+
