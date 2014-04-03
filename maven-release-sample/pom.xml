@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.zenika.nc.ci</groupId>
+  <artifactId>maven-release-sample</artifactId>
+  <version>1.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>maven-release-sample</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                <pushChanges>true</pushChanges>
+              </configuration>
+            </plugin>
+        </plugins>
+  </build>
+
+   <scm>
+    <connection>scm:git:git@github.com:MYUSERNAM/zenika_nc.git</connection>
+    <developerConnection>scm:git:git@github.com:MYUSERNAM/zenika_nc.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+     
+ <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+       <id>local-repository</id>
+               <name>Local Repository</name>
+                <url>file:///path/to/MyRepo</url>
+        </repository>
+            <snapshotRepository>
+               <id>snapshot-local-repository</id>
+               <name>Local Repository</name>
+                <url>file:///path/to/MyRepo</url>
+            </snapshotRepository>
+  </distributionManagement>
+
+</project>
