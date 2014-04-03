@@ -34,8 +34,8 @@
   </build>
 
    <scm>
-    <connection>scm:git:git@github.com:MYUSERNAM/zenika_nc.git</connection>
-    <developerConnection>scm:git:git@github.com:MYUSERNAM/zenika_nc.git</developerConnection>
+    <connection>scm:git:git@github.com:zeroetun/zenika_nc.git</connection>
+    <developerConnection>scm:git:git@github.com:zeroetun/zenika_nc.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
      
